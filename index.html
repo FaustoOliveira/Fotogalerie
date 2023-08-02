@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Galerie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload="loadImages()">
+
+    <div id="overlay" class="overlay d-none">
+        <img src="./img/x-mark.png" class="x-mark" onclick="closeImage()">
+        <div class="arrow-icon">
+            <div><img class="left-arrow-icon" src="./img/left-arrow-icon.png" id="left" onclick=""></div>
+            <img class="bigImg" id="bigImg">
+            <div><img class="right-arrow-icon" src="./img/right-arrow-icon.png" id="right" onclick=""></div>
+        </div>
+
+    </div>
+    <div class="header">
+        <span>Brasilien</span>
+        <img class="brazil" src="./img/brazil.png">
+    </div>
+
+    <div id="pictureList" class="pictureContent">
+
+
+    </div>
+
+    <div class="footer">
+        <div><span>free icons by icon-icons.com</span></div>
+        <div><span>flaticon.com</span></div>
+    </div>
+
+
+</body>
+
+</html>

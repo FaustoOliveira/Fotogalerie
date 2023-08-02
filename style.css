@@ -1,0 +1,228 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+
+/*overlay start*/
+.overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+
+    /* Add a pointer on hover */
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.bigImg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.arrow-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 31vh;
+
+}
+
+.left-arrow-icon {
+    width: 50px;
+    height: auto;
+    padding: 25px;
+    cursor: pointer;
+    z-index: 1;
+    position: sticky;
+    display: flex;
+    align-items: center;
+
+}
+.right-arrow-icon {
+    width: 50px;
+    height: auto;
+    padding: 25px;
+    cursor: pointer;
+    z-index: 1;
+    position: sticky;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgbox {
+    height: 200px;
+    margin: 2px;
+    padding: 2px;
+    /*position: relative;*/
+    object-fit: cover;
+    display: flex;
+    transition: transform .2s;
+    /* Animation */
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.imgbox img {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    height: 200px;
+    flex: inherit;
+}
+.imgbox:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: black;
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.header {
+    background-color: rgb(3, 3, 3);
+    height: 150px;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.pictureContent {
+    background-color: rgb(3, 3, 3);
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+.brazil {
+    height: 100px;
+  
+}
+
+.check {
+    display: none;
+}
+
+#check img {
+    width: 15px;
+    padding: 5px;
+    height: auto;
+    position: absolute;
+    /*opacity: 0;*/
+    /*display: none;*/
+
+}
+.imgbox:hover #check img {
+    display: flex;
+}
+.x-mark {
+    width: 50px;
+    height: auto;
+    padding: 25px;
+    cursor: pointer;
+    z-index: 1;
+    position: sticky;
+}
+
+/*responsive mobile*/
+
+@media(max-width:900px) {
+    .imgbox:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background-color: black;
+        transform: scale(1.1);
+        /*(110% zoom-note: if the zoom is too large, it will go outside of the viewport)*/
+
+    }
+}
+
+@media (max-width:550px) {
+    .header {
+        font-size: 57px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 100px;
+        background-color: black;
+    }
+
+    .brazil {
+        height: 55px;
+        width: auto;
+    }
+
+}
+
+
+@media (max-width:380px) {
+    .imgbox img {
+        width: 230px;
+        background-color: black;
+    }
+
+    .header {
+        font-size: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 55px;
+        background-color: black;
+    }
+    .brazil {
+        height: 35px;
+        width: auto;
+    }
+
+    .footer {
+        font-size: 22px;
+    }
+
+}
